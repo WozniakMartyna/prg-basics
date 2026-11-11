@@ -1,6 +1,5 @@
 # Operatory służą do wykonywania działań matematycznych i porównywania wartości.
 
-
 # + - dodawanie np. 7 + 2 daje 9
 # * - mnożenie np. 7 * 2 daje 14
 # ** - potęgowanie np. 7 ** 2 daje 49

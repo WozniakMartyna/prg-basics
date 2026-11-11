@@ -1,6 +1,5 @@
 # Program symuluje pięć rzutów kostką.
 
-
 # Importujemy moduł random, który pozwala losować liczby.
 import random
 
