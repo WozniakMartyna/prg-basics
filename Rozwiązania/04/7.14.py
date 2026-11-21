@@ -114,3 +114,6 @@ if __name__ == "__main__":
     # Dodatkowy test – nieobsługiwany operator.
 
     print(f(5, 3, "/"))   # Oczekiwany wynik: None
+
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

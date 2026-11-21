@@ -43,3 +43,5 @@ if __name__ == "__main__":
     print(f(1, -2, -3))  # True – druga i trzecia są ujemne.
     print(f(1, 2, 3))    # False – żadna liczba nie jest ujemna.
     print(f(0, 2, 3))    # False – zero nie jest liczbą ujemną.
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

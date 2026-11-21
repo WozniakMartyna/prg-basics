@@ -1,7 +1,6 @@
 # ZADANIE 3.2
 # Należy użyć modułu random, aby zasymulować rzut kostką do gry.
-# Program ma wylosować jedną liczbę całkowitą od 1 do 6
-# i wyświetlić wynik.
+# Program ma wylosować jedną liczbę całkowitą od 1 do 6 i wyświetlić wynik.
 
 # import random importuje moduł służący do losowania.
 import random

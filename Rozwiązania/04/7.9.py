@@ -83,3 +83,5 @@ if __name__ == "__main__":
     print(f(20576, False))  # Oczekiwany wynik: 12
     print(f(20576, True))   # Oczekiwany wynik: 8
     print(f(13115, True))   # Oczekiwany wynik: 0
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

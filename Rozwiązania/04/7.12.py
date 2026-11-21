@@ -58,3 +58,5 @@ if __name__ == "__main__":
     print(f(4))  # Oczekiwany wynik: */*/*/*
     print(f(1))  # Oczekiwany wynik: *
     print(f(0))  # Oczekiwany wynik: pusty napis
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

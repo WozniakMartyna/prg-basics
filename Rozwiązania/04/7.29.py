@@ -21,3 +21,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.
+
+# REKURENCJA – NAJWAŻNIEJSZE INFORMACJE
+#
+# Rekurencja to sposób rozwiązywania problemu, w którym funkcja
+# wywołuje samą siebie, ale z mniejszym lub prostszym argumentem.
+#
+# Każda rekurencja musi mieć:
+# 1. Warunek zakończenia – określa, kiedy funkcja ma przestać
+#    wywoływać samą siebie.
+# 2. Wywołanie rekurencyjne – funkcja ponownie wywołuje samą siebie,
+#    aby rozwiązać mniejszą część problemu.
+#
+# Funkcja najpierw wykonuje kolejne wywołania, aż osiągnie
+# warunek zakończenia. Następnie zwracane są wyniki i wykonywane
+# są pozostałe działania.

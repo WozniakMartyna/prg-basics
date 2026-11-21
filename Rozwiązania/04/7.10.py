@@ -62,3 +62,5 @@ if __name__ == "__main__":
 
     print(f(-7, 8))   # Oczekiwany wynik: 3
     print(f(-1, 11))  # Oczekiwany wynik: 0
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

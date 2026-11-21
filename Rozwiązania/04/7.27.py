@@ -28,3 +28,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

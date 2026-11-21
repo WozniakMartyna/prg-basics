@@ -50,3 +50,5 @@ if __name__ == "__main__":
     print(f("radar"))     # Oczekiwany wynik: True
     print(f("12-11-21"))  # Oczekiwany wynik: True
     print(f("book"))      # Oczekiwany wynik: False
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

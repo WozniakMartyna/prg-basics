@@ -27,3 +27,5 @@ if __name__ == "__main__":
     print(f("UE"))         # U-E
     print(f("x"))          # x
     print(f(""))           # Pusty tekst
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

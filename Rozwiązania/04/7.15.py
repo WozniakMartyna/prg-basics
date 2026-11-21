@@ -91,3 +91,6 @@ if __name__ == "__main__":
     print(f("+-+-+-+-"))      # Oczekiwany wynik: False
     print(f("+-++-+--"))      # Oczekiwany wynik: False
     print(f("+-++-++-+---"))  # Oczekiwany wynik: True
+
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

@@ -44,3 +44,5 @@ if __name__ == "__main__":
     print(f("Python jest super"))  # Oczekiwany wynik: Pythonjestsuper
     print(f("Hello"))              # Oczekiwany wynik: Hello
     print(f("A  B"))               # Oczekiwany wynik: AB
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

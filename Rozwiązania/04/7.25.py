@@ -34,3 +34,5 @@ def f(x, y):
 if __name__ == "__main__":
     print(f(1, 20))   # Oczekiwany wynik: 24
     print(f(10, 30))  # Oczekiwany wynik: 48
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

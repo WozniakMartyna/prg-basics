@@ -26,3 +26,5 @@ if __name__ == "__main__":
     print(f("2+3"))        # Oczekiwany wynik: 5
     print(f("3+8+1"))      # Oczekiwany wynik: 12
     print(f("2+3-4+5-0"))  # Oczekiwany wynik: 6
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

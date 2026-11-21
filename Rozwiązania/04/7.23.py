@@ -30,3 +30,5 @@ if __name__ == "__main__":
     print(f("A2water3"))  # True – 8 znaków, bez powtórzeń.
     print(f("qwerty"))    # True – 6 znaków, bez powtórzeń.
     print(f(""))          # False – pusty tekst.
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.

@@ -73,3 +73,5 @@ if __name__ == "__main__":
     print(f("North Atlantic Treaty Organization"))  # NATO
     print(f("Python"))  # P
     print(f(""))        # Pusty napis
+
+# if __name__ == "__main__": oznacza: wykonaj poniższy kod tylko wtedy, gdy ten plik został uruchomiony bezpośrednio, a nie zaimportowany jako moduł.
