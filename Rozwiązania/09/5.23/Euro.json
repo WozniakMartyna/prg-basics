@@ -1,0 +1,57 @@
+{
+    "table": "A",
+    "currency": "euro",
+    "code": "EUR",
+    "rates": [
+        {
+            "no": "222/A/NBP/2026",
+            "effectiveDate": "2026-11-16",
+            "mid": 4.4048
+        },
+        {
+            "no": "223/A/NBP/2026",
+            "effectiveDate": "2026-11-17",
+            "mid": 4.4032
+        },
+        {
+            "no": "224/A/NBP/2026",
+            "effectiveDate": "2026-11-18",
+            "mid": 4.4089
+        },
+        {
+            "no": "225/A/NBP/2026",
+            "effectiveDate": "2026-11-19",
+            "mid": 4.4165
+        },
+        {
+            "no": "226/A/NBP/2026",
+            "effectiveDate": "2026-11-20",
+            "mid": 4.4559
+        },
+        {
+            "no": "227/A/NBP/2026",
+            "effectiveDate": "2026-11-23",
+            "mid": 4.4556
+        },
+        {
+            "no": "228/A/NBP/2026",
+            "effectiveDate": "2026-11-24",
+            "mid": 4.4633
+        },
+        {
+            "no": "229/A/NBP/2026",
+            "effectiveDate": "2026-11-25",
+            "mid": 4.4809
+        },
+        {
+            "no": "230/A/NBP/2026",
+            "effectiveDate": "2026-11-26",
+            "mid": 4.4802
+        },
+        {
+            "no": "231/A/NBP/2026",
+            "effectiveDate": "2026-11-27",
+            "mid": 4.4673
+        }
+    ]
+}

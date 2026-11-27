@@ -1,0 +1,116 @@
+1. Dictionary – słownik
+Słownik przechowuje dane w parach klucz (key) – wartość (value). Klucze są unikalne, a wartości można zmieniać.
+
+person = {"name": "Marek", "age": 25}
+
+person["age"] = 26          # Zmiana wartości.
+person["city"] = "Krakow"   # Dodanie elementu.
+del person["city"]          # Usunięcie elementu.
+
+print(person["name"])       # Odczyt wartości.
+print(person.keys())        # Wyświetlenie kluczy.
+print(person.values())      # Wyświetlenie wartości.
+print(person.items())       # Wyświetlenie par klucz-wartość.
+
+for key, value in person.items():
+    print(key, ":", value)
+
+Najważniejsze:
+- keys() – klucze.
+- values() – wartości.
+- items() – klucze i wartości.
+- get() – pobieranie wartości.
+- del – usuwanie elementu.
+
+
+2. Set – zbiór -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Zbiór przechowuje unikalne elementy – automatycznie usuwa duplikaty. Nie gwarantuje kolejności elementów.
+
+numbers = {1, 2, 3, 2}
+numbers.add(4)       # Dodanie elementu.
+numbers.remove(1)    # Usunięcie elementu.
+
+print(numbers)
+
+Najważniejsze operacje:
+Zapis	Znaczenie
+A \| B	Suma zbiorów
+A & B	Część wspólna
+A - B	Różnica
+A ^ B	Różnica symetryczna
+issubset()	Sprawdzenie, czy zbiór jest podzbiorem
+set(lista)	Zamiana listy na zbiór
+
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A | B)  # {1, 2, 3, 4, 5}
+print(A & B)  # {3}
+print(A - B)  # {1, 2}
+print(A ^ B)  # {1, 2, 4, 5}
+
+
+
+3. Stack – stos --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Stos działa według zasady LIFO (Last In, First Out) – ostatni dodany element jest pobierany jako pierwszy.
+
+import queue
+
+stack = queue.LifoQueue()
+
+stack.put(10)  # Dodanie elementu.
+stack.put(20)
+stack.put(30)
+
+print(stack.get())  # 30 – pobiera ostatni dodany element.
+print(stack.get())  # 20
+
+Najważniejsze metody:
+Metoda	Znaczenie
+LifoQueue()	Tworzy stos
+put()	Dodaje element
+get()	Pobiera i usuwa element
+qsize()	Liczba elementów
+empty()	Sprawdza, czy stos jest pusty
+
+Stos można również tworzyć za pomocą listy: append() dodaje element, a pop() pobiera ostatni.
+
+Zastosowania: cofanie stron, sprawdzanie nawiasów, zamiana liczb dziesiętnych na binarne.
+
+
+
+4. Queue – kolejka ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Kolejka działa według zasady FIFO (First In, First Out) – pierwszy dodany element jest pobierany jako pierwszy.
+
+import queue
+
+people = queue.Queue()
+
+people.put("Michael")  # Dodanie na koniec kolejki.
+people.put("Charlotte")
+people.put("Olivia")
+
+while not people.empty():
+    print(people.get())  # Pobiera pierwszy element.
+
+Najważniejsze metody:
+Metoda	Znaczenie
+Queue()	Tworzy kolejkę
+put()	Dodaje element na koniec
+get()	Pobiera pierwszy element
+qsize()	Liczba elementów
+empty()	Sprawdza, czy kolejka jest pusta
+
+Zastosowanie: kolejka plików do wydrukowania – plik dodany jako pierwszy zostanie wydrukowany jako pierwszy.
+
+
+5. Najważniejsze różnice do zapamiętania --------------------------------------------------------------------------------------------------------------------------------------------------------
+Struktura	Zasada	Do czego służy?
+Dictionary	Klucz – wartość	Przechowywanie opisanych danych
+Set	Unikalne elementy	Usuwanie duplikatów i porównywanie zbiorów
+Stack	LIFO	Ostatni dodany – pierwszy pobrany
+Queue	FIFO	Pierwszy dodany – pierwszy pobrany
+
+Dwie najważniejsze definicje:
+- LIFO – Last In, First Out.
+- FIFO – First In, First Out.
