@@ -1,0 +1,114 @@
+Notatka – Regular Expressions (Regex)
+
+1. Co to jest Regex?
+Regex (Regular Expression) to wyrażenie regularne, czyli specjalny wzorzec służący do wyszukiwania określonych fragmentów tekstu.
+
+Możemy dzięki niemu:
+- wyszukiwać liczby w tekście;
+- znajdować daty i numery telefonów;
+- sprawdzać poprawność loginu i hasła;
+- wyszukiwać kwoty pieniędzy w pliku.
+
+Przykład:
+import re
+text = "My phone number is 555-123-4567"
+pattern = r"\d{3}-\d{3}-\d{4}"
+result = re.findall(pattern, text)print(result)
+
+Wynik:
+['555-123-4567']
+
+Program znalazł numer telefonu, ponieważ pasował do podanego wzorca.
+
+
+
+2. Najważniejsze znaki Regex
+
+| Zapis | Znaczenie | Przykład |
+|---|---|---|
+| \d | Dowolna cyfra od 0 do 9 | 5 |
+| \D | Znak, który nie jest cyfrą | A |
+| \s | Biały znak, np. spacja |   |
+| \S | Znak, który nie jest białym znakiem | A |
+| [a-z] | Mała litera | m |
+| [A-Z] | Wielka litera | M |
+| [0-9] | Dowolna cyfra | 7 |
+| [A-Za-z] | Mała lub wielka litera | M, m |
+| [A-Za-z0-9] | Litera lub cyfra | a, 7 |
+| + | Co najmniej jedno wystąpienie | \d+ |
+| * | Zero lub więcej wystąpień | \d* |
+| ? | Element opcjonalny | colou?r |
+| {6} | Dokładnie 6 wystąpień | [a-z]{6} |
+| {6,} | Co najmniej 6 wystąpień | [a-z]{6,} |
+| {2,5} | Od 2 do 5 wystąpień | \d{2,5} |
+| . | Dowolny pojedynczy znak (zwykle oprócz nowej linii) | a.c |
+| \b | Granica słowa | \bcat\b |
+| ^ | Początek tekstu | ^Hello |
+| $ | Koniec tekstu | end$ |
+| | | LUB | cat\|dog |
+| () | Grupowanie fragmentów wzorca | (ab)+ |
+
+
+Jak rozumieć nawiasy kwadratowe i klamrowe?
+
+Przykład:
+pattern = r"[a-z]{6,}"
+
+Czytamy to tak:
+- [a-z] – wybierz jedną małą literę;
+- {6,} – powtórz ją co najmniej 6 razy.
+Czyli cały wzorzec oznacza: minimum 6 małych liter.
+
+
+
+3. Moduł re – najważniejsze funkcje
+
+Na początku programu dodajemy:
+import re
+
+Dzięki temu możemy korzystać z funkcji modułu re.
+Funkcja	Co robi?
+re.findall()	Znajduje wszystkie dopasowania i zwraca listę
+re.search()	Szuka pierwszego dopasowania w dowolnym miejscu tekstu
+re.match()	Sprawdza dopasowanie od początku tekstu
+re.fullmatch()	Sprawdza, czy cały tekst pasuje do wzorca
+re.sub()	Zamienia znalezione fragmenty tekstu na inne
+
+Przykład:
+import re
+text = "I have 12 apples and 5 bananas."
+# Znajdujemy wszystkie liczby w tekście.
+numbers = re.findall(r"\d+", text)
+print(numbers)
+
+Wynik:
+['12', '5']
+
+Ważne: findall() zwraca teksty (str), a nie liczby. Jeśli chcemy wykonywać obliczenia, musimy je przekonwertować, np. za pomocą int() lub float().
+
+
+
+4. Co oznacza r przed wzorcem?
+Przykład:
+pattern = r"\d+"
+
+Litera r oznacza raw string, czyli surowy tekst.
+Jest przydatna przy regex, ponieważ wzorce często zawierają znak \ (backslash).
+
+Przykładowo:
+- \d oznacza cyfrę;
+- \s oznacza biały znak;
+- \b oznacza granicę słowa.
+Dlatego przy zapisywaniu wzorców regex najczęściej używamy r"...".
+
+
+
+findall() a fullmatch()
+
+findall()
+Szuka wszystkich pasujących fragmentów w większym tekście.
+Przykład: znajduje wszystkie kwoty w raporcie zakupów.
+
+fullmatch()
+Sprawdza, czy cały wpisany tekst pasuje do wzorca.
+Przykład: sprawdza, czy cały login składa się z małych liter.
